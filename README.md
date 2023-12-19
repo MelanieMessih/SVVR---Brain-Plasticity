@@ -1,8 +1,8 @@
-# SVVR-Brain-Plasticity
+# Brain Plasticity
 
-### Bachelor project 
-- Bachelor programme: Chemistry (joint degree UvA/VU)
-- Duration: 3 months (April 2023 - June 2023)
+### Scientific Visualization & Virtual Reality - visualization project 
+- University of Amsterdam
+- November 2023 - December 2023
 
 # Molecular fingerprints
 In this study, an algorithm was developed that automatically calculates, selects, and combines molecular fingerprints from SMILES, and utilizes them to generate an optimized random forest regression model for the prediction of any target property.
@@ -14,6 +14,17 @@ This codebase is fully written in Julia 1.6.7. The packages needed to sucessfull
 ```
 using Pkg, CSV, DataFrames, PyCall, Conda, ScikitLearn, Statistics, Plots, Tables, Plots.PlotMeasures, LightXML, LinearAlgebra, ProgressBars, OrderedCollections, Base.Filesystem
 ```
+
+import re
+import zipfile
+import os
+import pandas as pd
+import csv
+import numpy as np
+from tqdm import tqdm
+
+
+
 
 To calculate molecular fingerprints, Java needs to be installed (https://www.java.com/en/download/manual.jsp). Other packages needed are installed using Conda and pyimport from PyCall.
 
