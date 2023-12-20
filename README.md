@@ -9,22 +9,12 @@ In this study, an algorithm was developed that automatically calculates, selects
 
 ### Requirements
 
-This codebase is fully written in Julia 1.6.7. The packages needed to sucessfully run the code are provided below:
+This codebase is fully written in Python 1.6.7. The packages needed to sucessfully run the code are provided below:
 
 ```
-using Pkg, CSV, DataFrames, PyCall, Conda, ScikitLearn, Statistics, Plots, Tables, Plots.PlotMeasures, LightXML, LinearAlgebra, ProgressBars, OrderedCollections, Base.Filesystem
-```
-
-import re
-import zipfile
-import os
-import pandas as pd
-import csv
-import numpy as np
+import re, zipfile, os, pandas as pd, csv, numpy as np
 from tqdm import tqdm
-
-
-
+```
 
 To calculate molecular fingerprints, Java needs to be installed (https://www.java.com/en/download/manual.jsp). Other packages needed are installed using Conda and pyimport from PyCall.
 
