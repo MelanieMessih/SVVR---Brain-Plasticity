@@ -101,13 +101,11 @@ The following list describes the folder structure that will be created when the 
   - **/figures/combined_fingerprints**: all figures of the combined fingerprints
 
 ## Authors
-- Melanie Messih
+- Melanie Messih (13362933)
+- Mike Meulendijks (13289179)
 
-## Supervisors
-- Dr. Saer Samanipour
-- Viktoriia Turkina MSc
+## Examiner
+- Dr. R.G. Belleman
 
-## Research group, research institute and university
-Environmental Modeling & Computational Mass Spectrometry (EMCMS), Analytical Chemistry Group, Van 't Hoff Institute for Molecular Sciences (HIMS), University of Amsterdam (UvA)
-
-https://emcms.info/ 
+## University
+University of Amsterdam (UvA)
