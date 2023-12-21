@@ -5,7 +5,9 @@
 - November 2023 - December 2023
 
 # REMOVE Molecular fingerprints --> REMOVE
-In this study, an algorithm was developed that automatically calculates, selects, and combines molecular fingerprints from SMILES, and utilizes them to generate an optimized random forest regression model for the prediction of any target property.
+In this study, 
+
+an algorithm was developed that automatically calculates, selects, and combines molecular fingerprints from SMILES, and utilizes them to generate an optimized random forest regression model for the prediction of any target property.
 
 ### Requirements
 
@@ -16,15 +18,24 @@ import re, zipfile, os, pandas as pd, csv, numpy as np, matplotlib.pyplot as plt
 from tqdm import tqdm
 ```
 
-REMOVE To calculate molecular fingerprints, Java needs to be installed (https://www.java.com/en/download/manual.jsp). Other packages needed are installed using Conda and pyimport from PyCall. --> REMOVE
-
 The following list describes the folder structure that can be found on this page.
-- **Bachelorproject**: all of the files in this folder should be included in the main directory when running the code.
+- **Brain-Plasticity**: all of the files in this folder should be included in the main directory when running the code.
   - **/final_function.jl**: Julia file needed to generate the best fingerprint based on the given dataset. 
   - **/final_imports.jl**: Julia file with all imports needed.
   - **/final_functions.jl**: Julia file with all functions needed.
   - **/toxicity_data_fish.csv**: CSV fish toxicity data set used for this project.
   - **/descriptors.xml**: XML file needed to generate PaDEL fingerprints from SMILES.
+
+- **code**: contains all functions needed to reproduce our work
+  - **/brain_plasticity.py**: Python file including all functions
+
+- **figures**: contains all figures that are created
+  - **/no-network
+  - **/disable
+  - **/stimulus
+  - **/calcium
+ 
+- **
 
 ### Use
 
