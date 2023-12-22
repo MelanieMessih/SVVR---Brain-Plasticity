@@ -7,8 +7,6 @@
 # REMOVE Molecular fingerprints --> REMOVE
 In this study, ...........................................................
 
-an algorithm was developed that automatically calculates, selects, and combines molecular fingerprints from SMILES, and utilizes them to generate an optimized random forest regression model for the prediction of any target property.
-
 ### Requirements
 
 This codebase is fully written in Python 3.9.13. The packages needed to sucessfully run the code are provided below:
@@ -23,25 +21,33 @@ It is required that the unzipped brain plasticity data is included in the same d
 The following list describes the folder structure that can be found on this page.
 - **Brain-Plasticity**: 
   - **code**: contains all functions needed to reproduce our work
-    - **code/brain_plasticity.py**: Python file including all functions
+    - **code/brain_plasticity.py**: Python file including all functions for data preprocessing and visualization
  
-  - **processed_data**:
-    - **processed_data/no-network**:
-    - **processed_data/disable**:
-    - **processed_data/stimulus**:
-    - **processed_data/calcium**:
+  - **processed-data**: contains the preprocessed data needed to generate the visualizations
+    - **processed-data/connections/no-network**: contains
+    - **processed-data/connections/disable**: contains 
+    - **processed-data/connections/stimulus**: contains
+    - **processed-data/connections/calcium**: contains
+      
+    - **processed-data/monitor-areas/no-network**: contains
+    - **processed-data/monitor-areas/disable**: contains 
+    - **processed-data/monitor-areas/stimulus**: contains
+    - **processed-data/monitor-areas/calcium**: contains
 
-  - **figures**: contains all figures that are created
-    - **figures/no-network**: 
-    - **figures/disable**: 
-    - **figures/stimulus**: 
-    - **figures/calcium**:
- 
-  - **
+  - **figures**: contains all figures that were created --------------> automatic directory generation for figures!!!
+    - **figures/connections/no-network**: ParaView 
+    - **figures/connections/disable**: ParaView
+    - **figures/connections/stimulus**: ParaView
+    - **figures/connections/calcium**: ParaView
+      
+    - **figures/monitor-areas/no-network**: Python Matplotlib plot
+    - **figures/monitor-areas/disable**: Python Matplotlib plot
+    - **figures/monitor-areas/stimulus**: Python Matplotlib plot
+    - **figures/monitor-areas/calcium**: Python Matplotlib plot
 
 ### Use
 
-An example of how to run the function is provided below:
+An example of how to run the function is provided below: -------------> fix
 
 ```
 include("final_function.jl")
