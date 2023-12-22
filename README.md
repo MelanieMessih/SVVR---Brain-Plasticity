@@ -9,7 +9,7 @@ Brain plasticity plays a crucial role in the functioning of the brain. To invest
 
 ### Requirements
 
-This codebase is fully written in Python 3.9.13. The packages needed to sucessfully run the code are provided below:
+This codebase is written in Python 3.9.13. The packages needed to sucessfully run the code are provided below:
 
 ```
 import re, zipfile, os, pandas as pd, csv, numpy as np, matplotlib.pyplot as plt
@@ -20,8 +20,10 @@ The brain plasticity data set was retrieved from IEEE SciVis Contest 2023: https
 
 The following list describes the folder structure that can be found on this page.
 - **Brain-Plasticity**: 
-  - **code**: contains all functions needed to reproduce our work
-    - **code/brain_plasticity.py**: Python file including all functions for data preprocessing and visualization
+  - **code**: contains all code needed to reproduce our work
+    - **code/brain_plasticity.py**: Python file including the functions for all data preprocessing and monitoring of the areas
+    - **code/visualization_of_simulations.py**: Python file for visualizing the networks between the different areas in ParaView
+    - **code/visualization_of_simulations.pvsm**: final state of the networks between the different areas in ParaView
  
   - **processed-data**: contains the preprocessed data needed to generate the visualizations
     - **processed-data/connections/no-network**: contains 202 txt files, one for each incoming and outgoing signal per step in the no-network simulation, with the connected source and target areas and their positions.
@@ -34,17 +36,26 @@ The following list describes the folder structure that can be found on this page
     - **processed-data/monitor-areas/stimulus**: contains 48 csv files, one for each brain area, with information (e.g. grown and connected axons/dendrites and the calcium levels) per step in the stimulus simulation.
     - **processed-data/monitor-areas/calcium**: contains 48 csv files, one for each brain area, with information (e.g. grown and connected axons/dendrites and the calcium levels) per step in the calcium simulation.
 
-  - **figures**: contains the figures that were created --------------> automatic directory generation for figures!!!
-    - **figures/connections/no-network**: ParaView .............
-    - **figures/connections/disable**: ParaView ..........
-    - **figures/connections/stimulus**: ParaView ..........
-    - **figures/connections/calcium**: ParaView .............
+  - **figures**: contains figures that were created
+    - **figures/connections/no-network**: contains 3 png figures created with ParaView that were included in our report
+    - **figures/connections/disable**: contains 3 png figures created with ParaView that were included in our report
+    - **figures/connections/stimulus**: contains 1 png figures created with ParaView that were included in our report
+    - **figures/connections/calcium**: contains 2 png figures created with ParaView that were included in our report
     - ----------
     - **figures/monitor-areas/no-network**: contains 48 png figures, one for each brain area, with the grown and connected axons/dendrites and the calcium levels in the no-network simulations.
     - **figures/monitor-areas/disable**: contains 48 png figures, one for each brain area, with the grown and connected axons/dendrites and the calcium levels in the disable simulations.
     - **figures/monitor-areas/stimulus**: contains 48 png figures, one for each brain area, with the grown and connected axons/dendrites and the calcium levels in the stimulus simulations.
     - **figures/monitor-areas/calcium**: contains 48 png figures, one for each brain area, with the grown and connected axons/dendrites and the calcium levels in the calcium simulations.
+   
+  - **animations**: contains the animations that were created using ParaView version 5.12.0
+    - **animations/no-network**: contains 1 ogv file, covering the animation of the network formed between different areas from the no-network simulation steps
+    - **animations/disable**: contains 1 ogv file, covering the animation of the network formed between different areas from the disable simulation steps
+    - **animations/stimulus**: contains 1 ogv file, covering the animation of the network formed between different areas from the stimulus simulation steps
+    - **animations/calcium**: contains 1 ogv file, covering the animation of the network formed between different areas from the calcium simulation steps
 
+  - **AR-visualization**: contains the AR visualization that was created using Lens Studio version 4.55
+    - **network_AR.lsproj**: lsproj file that contains the AR visualization attempt of the neuronal network
+  
 ### Use
 
 The different functions from our workflow can be activated by uncommenting the function calls in the brain_plasticity.py file. These can be found under 'example usage' in the Python file. The selected functions can subsequently be called as follows:
@@ -52,6 +63,7 @@ The different functions from our workflow can be activated by uncommenting the f
 ```
 python brain_plasticity.py
 ```
+To visualize the networks between different areas, visualization_of_simulations.pvsm or visualization_of_simulations.py can be loaded into ParaView.
 
 ### Structure
 
