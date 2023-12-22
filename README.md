@@ -2,7 +2,7 @@
 
 ### Scientific Visualization & Virtual Reality - visualization project 
 - University of Amsterdam
-- November 2023 - December 2023
+- November 2023 - December 2023 
 
 # Scientific Visualization of Brain Plasticity under Varying Circumstances: A Study on the Effect of Learning and Lesions on the Neuronal Network of the Human Brain
 Brain plasticity plays a crucial role in the functioning of the brain. To investigate these effects, brain simulations models can be used that mimic the plasticity of the brain under varying circumstances. In this study, we are investigating the effects of learning and lesions on specific areas of the brain with scientific visualization.
