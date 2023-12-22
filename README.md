@@ -28,8 +28,7 @@ The following list describes the folder structure that can be found on this page
     - **processed-data/connections/disable**: contains 202 txt files, one for each incoming and outgoing signal per step in the disable simulation, with the connected source and target areas and their positions.
     - **processed-data/connections/stimulus**: contains 202 txt files, one for each incoming and outgoing signal per step in the stimulus simulation, with the connected source and target areas and their positions.
     - **processed-data/connections/calcium**: contains 202 txt files, one for each incoming and outgoing signal per step in the calcium simulation, with the connected source and target areas and their positions.
- 
-      
+    - ---------- 
     - **processed-data/monitor-areas/no-network**: contains 48 csv files, one for each brain area, with information (e.g. grown and connected axons/dendrites and the calcium levels) per step in the no-network simulation.
     - **processed-data/monitor-areas/disable**: contains 48 csv files, one for each brain area, with information (e.g. grown and connected axons/dendrites and the calcium levels) per step in the disable simulation.
     - **processed-data/monitor-areas/stimulus**: contains 48 csv files, one for each brain area, with information (e.g. grown and connected axons/dendrites and the calcium levels) per step in the stimulus simulation.
@@ -40,8 +39,7 @@ The following list describes the folder structure that can be found on this page
     - **figures/connections/disable**: ParaView ..........
     - **figures/connections/stimulus**: ParaView ..........
     - **figures/connections/calcium**: ParaView .............
- 
-      
+    - ----------
     - **figures/monitor-areas/no-network**: contains 48 png figures, one for each brain area, with the grown and connected axons/dendrites and the calcium levels in the no-network simulations.
     - **figures/monitor-areas/disable**: contains 48 png figures, one for each brain area, with the grown and connected axons/dendrites and the calcium levels in the disable simulations.
     - **figures/monitor-areas/stimulus**: contains 48 png figures, one for each brain area, with the grown and connected axons/dendrites and the calcium levels in the stimulus simulations.
@@ -62,12 +60,12 @@ The following list describes the folder structure that will be generated when th
 - **/disable_area**: 203 txt files - contains the preprocessed data needed to generate the ParaView network visualizations of the disable simulation, and the positions file without headers 
 - **/stimulus_area**: 203 txt files - contains the preprocessed data needed to generate the ParaView network visualizations of the stimulus simulation, and the positions file without headers 
 - **/calcium_area**: 203 txt files - contains the preprocessed data needed to generate the ParaView network visualizations of the calcium simulation, and the positions file without headers 
-
+- ----------
 - **/no_network_per_area**: 48 csv files - contains the preprocessed data needed to generate the Matplotlib figures to monitor the no-network simulation per area
 - **/disable_per_area**: 48 csv files - contains the preprocessed data needed to generate the Matplotlib figures to monitor the disable simulation per area
 - **/stimulus_per_area**: 48 csv files - contains the preprocessed data needed to generate the Matplotlib figures to monitor the stimulus simulation per area
 - **/calcium_per_area**: 48 csv files - contains the preprocessed data needed to generate the Matplotlib figures to monitor the calcium simulation per area
-
+- ----------
 - **/no_network_figures**: 48 png figures - the monitored connected and grown axons/dendrites and calcium levels figures per area, resulting from the no_network_per_area csv files
 - **/disable_figures**: 48 png figures - the monitored connected and grown axons/dendrites and calcium levels figures per area, resulting from the disable_per_area csv files
 - **/stimulus_figures**: 48 png figures - the monitored connected and grown axons/dendrites and calcium levels figures per area, resulting from the stimulus_per_area csv files
